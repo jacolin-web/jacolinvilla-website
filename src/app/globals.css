@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-custom: var(--font-custom);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +22,66 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-gray-950);
+}
+
+#sub-header{
+  white-space: pre;
+}
+
+.bio-avatar{
+  border-radius: 100%
+}
+
+button{
+  border: 1px solid var(--color-gray-950);
+  box-shadow: 3px 4px var(--color-gray-950);
+  border-radius: 25px;
+  margin: 2px 4px 4px 2px;
+}
+
+
+button:hover{
+  background-color: var(--color-fuchsia-400);
+}
+
+h1{
+  font-family: var(--font-dreamer);
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  line-height: normal;
+}
+
+h2{
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.inline-link:hover{
+  padding: 4px;
+  background-color: var(--color-violet-400);
+  border: 1px solid var(--color-gray-950);
+  box-shadow: 3px 4px var(--color-gray-950);
+  border-radius: 25px;
+  margin: 2px 4px 4px 2px;
+}
+
+.badge{
+  border: 1px solid var(--color-gray-950);
+  border-radius: 25px;
+  margin: 2px 4px 4px 2px;
+  padding: 4px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  h2{
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: normal;
+}
 }
