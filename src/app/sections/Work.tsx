@@ -2,7 +2,7 @@ import { Download } from 'iconoir-react';
 import React from 'react';
 
 // Work Skills constants
-const mailchimpSkills = [
+const mailchimpSkills:string[] = [
         "JavaScript",
         "React",
         "HTML",
@@ -14,7 +14,7 @@ const mailchimpSkills = [
         "Playwright",
     ];
 
-    const synopSkills = [
+    const synopSkills:string[] = [
         "React",
         "TypeScript",
         "Vizx",
@@ -26,7 +26,7 @@ const mailchimpSkills = [
         "Bitbucket",
     ];
 
-    const jpmSkills = [
+    const jpmSkills:string[] = [
         "Java",
         "Typescript",
         "React",
@@ -66,8 +66,14 @@ const Work: React.FC = () => {
                 </div>
                 <CompanySkills skills={jpmSkills} />
             </div>
-            <button type="button" className="px-4 py-2 rounded font-bold bg-gray-200">
-                <div className="flex flex-nowrap"><Download/>Download Resume</div></button>
+            <a 
+                href="/assets/jacolinvilla-resume.pdf" 
+                download
+                className="font-bold inline-flex items-center gap-2 px-4 py-2 border border-gray-950 rounded-[25px] shadow-[3px_4px_0_0_rgb(10,10,10)] m-[2px_4px_4px_2px] bg-gray-200 hover:bg-fuschia-300"
+                >
+                <Download />
+                Download Resume
+            </a>
         </section>
     );
 };
