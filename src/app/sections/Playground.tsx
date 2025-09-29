@@ -6,7 +6,7 @@ const Playground: React.FC = () => {
         <section className="p-8">
             <h2>Playground</h2>
             <div className="inline-flex items-center">
-                <p className='text-md text-center md:text-left md:text-2xl'>
+                <p className='text-md text-left md:text-left md:text-2xl'>
                     Some projects I&apos;ve worked on just for fun
                 </p>  
                 <EmojiTalkingHappy/>
