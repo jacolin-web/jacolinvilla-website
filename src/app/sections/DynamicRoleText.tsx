@@ -1,4 +1,3 @@
-// components/DynamicRoleText.tsx
 'use client';
 import { useState, useEffect, useRef } from 'react';
 
@@ -79,7 +78,7 @@ const DynamicRoleText: React.FC = () => {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [currentIndex, isChanging]);
+  }, [changeText, currentIndex, isChanging]);
   
   const textClasses = `
     text-center text-lg transition-all duration-300

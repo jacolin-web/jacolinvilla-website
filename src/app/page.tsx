@@ -1,11 +1,11 @@
-import About from "./sections/About";
-
-import { Github, Linkedin, MailOut, MapPin } from 'iconoir-react';
-import Image from "next/image";
 import { Suspense } from 'react';
+import Image from "next/image";
+
+import About from "./sections/About";
 import DynamicRoleText from "./sections/DynamicRoleText";
-import Experience from "./sections/Experience";
 import SectionNav from "./sections/SectionNav";
+import { MapPin } from 'iconoir-react';
+import Work from './sections/Work';
 
 interface PageProps {
   searchParams: { section?: string };
@@ -15,22 +15,20 @@ export default function Home({ searchParams }: PageProps) {
   
   const renderSection = () => {
     switch (currentSection) {
-      case 'experience':
-        return <Experience />;
+      case 'work':
+        return <Work />;
       case 'projects':
         return <div>Projects coming soon...</div>;
-      case 'contact':
-        return <div>Contact coming soon...</div>;
       default:
         return <About />;
     }
   };
 
    return (
-    <div className="font-sans min-h-screen flex flex-col">
-      {/* Give main a specific height so h-full works inside */}
-      <main className="flex-1 flex flex-col">
-        <div className="flex flex-col md:flex-row w-full flex-1">
+    <div className="font-sans h-screen flex flex-col"> 
+    <main className="flex-1 flex flex-col overflow-hidden">
+        <div className="flex flex-col md:flex-row w-full flex-1 h-full">
+          {/* Left section */}
           <div className="bg-violet-200 p-10 flex flex-col justify-center md:min-w-[300px]">
             <Image
               className="bio-avatar grayscale hidden md:block"
@@ -53,12 +51,14 @@ export default function Home({ searchParams }: PageProps) {
             </div>
           </div>
           
-          {/* Right section - content (bottom on mobile, right on desktop) */}
-          <div className="bg-amber-50 flex-1 md:border-l">
-            <SectionNav currentSection={currentSection} />
+          {/* Right section */}
+          <div className="bg-amber-50 flex-1 md:border-l flex flex-col">
+            <div className="flex-shrink-0">
+              <SectionNav currentSection={currentSection} />
+            </div>
             
-            {/* Content row */}
-            <div className="flex flex-1 items-center justify-center p-8">
+            {/* Content */}
+            <div className="flex-1 overflow-y-auto">
               <Suspense fallback={<div>Loading...</div>}>
                 {renderSection()}
               </Suspense>
@@ -67,7 +67,7 @@ export default function Home({ searchParams }: PageProps) {
        </div>
       </main>
       
-      {/* Footer - always at bottom */}
+      {/* Footer */}
       <footer className="flex gap-[24px] flex-wrap items-center justify-center p-4 bg-gray-50 border-t">
         This site built with NextJS & Tailwind. Icons from Iconoir. Made with an iced ube latte. 2025.
       </footer>
