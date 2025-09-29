@@ -19,7 +19,7 @@ const SectionNav: React.FC<SectionNavProps> = ({ currentSection }) => {
   const sections = [
     { key: 'about', label: 'ABOUT' },
     { key: 'work', label: 'WORK' },
-    { key: 'projects', label: 'PROJECTS' },
+    { key: 'playground', label: 'PLAY' },
   ];
 
   return (

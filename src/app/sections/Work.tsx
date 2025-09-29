@@ -44,25 +44,25 @@ const Work: React.FC = () => {
                 <CompanyTitle title="Software Engineer II" company="Intuit" />
                 <span className='italic'>March 2023- September 2024</span>
                 <div>
-                    - Served as technical frontend lead for the Segmentation team, collaborating with cross-functional engineering, product, and design teams <br />
-                    - Led design system overhaul serving 13+ million users, improving performance and user experience across the platform <br />
-                    - Drove multiple technical initiatives such as reducing technical debt, improving testing coverage and strategy, and implementing A/B testing frameworks <br />
+                    - Served as technical frontend lead for the Segmentation team, collaborating with cross-functional engineering, product, and design teams. <br />
+                    - Led design system overhaul serving 13+ million users, improving performance and user experience across the platform. <br />
+                    - Drove multiple technical initiatives such as reducing technical debt, improving testing coverage and strategy, and implementing A/B testing frameworks. <br />
                 </div>
                 <CompanySkills skills={mailchimpSkills} />
                 <CompanyTitle title="Founding Senior Frontend Engineer" company="Synop" />  
                 <span className='italic'>March 2022- December 2022</span>
                 <div>
-                    - Built design system and component library from scratch <br />
-                    - Collaborated with product and design leadership to define technical frontend architecture and user experience strategy <br />
-                    - Owned and developed User & Vehicle Management frontend domain and product features <br />
+                    - Built design system and component library from scratch.. <br />
+                    - Collaborated with product and design leadership to define technical frontend architecture and user experience strategy. <br />
+                    - Owned and developed User & Vehicle Management frontend domain and product features. <br />
                 </div>
                 <CompanySkills skills={synopSkills} />
                 <CompanyTitle title="Associate Software Engineer" company="JPMorgan Chase & Co." />
                 <span className='italic'>July 2018 - February 2022</span>
                 <div>
-                    - Developed internal platform used by 130+ employees including C-suite executives <br />
-                    - Led demos and training sessions to drive platform adoption across teams <br />
-                    - Enhanced multiple applications focusing on user experience and code quality <br />
+                    - Developed internal platform used by 130+ employees including C-suite executives. <br />
+                    - Led demos and training sessions to drive platform adoption across teams. <br />
+                    - Enhanced multiple applications focusing on user experience and code quality. <br />
                 </div>
                 <CompanySkills skills={jpmSkills} />
             </div>

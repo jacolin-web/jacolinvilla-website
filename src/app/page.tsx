@@ -6,6 +6,7 @@ import DynamicRoleText from "./sections/DynamicRoleText";
 import SectionNav from "./sections/SectionNav";
 import { MapPin } from 'iconoir-react';
 import Work from './sections/Work';
+import Playground from './sections/Playground';
 
 interface PageProps {
   searchParams: { section?: string };
@@ -17,8 +18,8 @@ export default function Home({ searchParams }: PageProps) {
     switch (currentSection) {
       case 'work':
         return <Work />;
-      case 'projects':
-        return <div>Projects coming soon...</div>;
+      case 'playground':
+        return <Playground />;
       default:
         return <About />;
     }
