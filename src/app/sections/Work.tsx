@@ -69,7 +69,7 @@ const Work: React.FC = () => {
             <a 
                 href="/assets/jacolinvilla-resume.pdf" 
                 download
-                className="font-bold inline-flex items-center gap-2 px-4 py-2 border border-gray-950 rounded-[25px] shadow-[3px_4px_0_0_rgb(10,10,10)] m-[2px_4px_4px_2px] bg-gray-200 hover:bg-fuschia-300"
+                className="download-link font-bold inline-flex items-center px-4 py-2 bg-gray-200"
                 >
                 <Download />
                 Download Resume
