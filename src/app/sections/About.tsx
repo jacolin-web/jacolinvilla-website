@@ -1,4 +1,4 @@
-import { BookStack, Github, Linkedin, MailOut } from "iconoir-react";
+import { BookStack, Github, Linkedin } from "iconoir-react";
 
 function About() {
     return (
