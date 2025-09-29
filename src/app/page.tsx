@@ -26,9 +26,9 @@ export default function Home({ searchParams }: PageProps) {
   };
 
    return (
-    <div className="font-sans h-screen flex flex-col md:h-screen">
-      <main className="flex-1 flex flex-col md:overflow-hidden min-h-0">
-        <div className="flex flex-col md:flex-row w-full h-full">
+    <div className="font-sans min-h-screen md:h-screen flex flex-col">
+      <main className="flex-1 flex flex-col md:overflow-hidden md:min-h-0">
+        <div className="flex flex-col md:flex-row w-full md:h-full">
           {/* Left section */}
           <div className="bg-violet-200 p-10 flex flex-col justify-center md:min-w-[300px]">
             <Image
@@ -53,13 +53,13 @@ export default function Home({ searchParams }: PageProps) {
           </div>
           
           {/* Right section */}
-          <div className="bg-amber-50 flex-1 md:border-l flex flex-col min-h-0">
+          <div className="bg-amber-50 flex-1 md:border-l flex flex-col md:min-h-0">
             <div className="flex-shrink-0">
               <SectionNav currentSection={currentSection} />
             </div>
             
-            {/* Content area */}
-            <div className="flex-1 overflow-y-auto">
+            {/* Content area - no overflow on mobile */}
+            <div className="md:flex-1 md:overflow-y-auto">
               <div className="p-8">
                 <Suspense fallback={<div>Loading...</div>}>
                   {renderSection()}
