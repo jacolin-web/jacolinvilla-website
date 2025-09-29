@@ -1,28 +1,44 @@
+import { Download } from 'iconoir-react';
 import React from 'react';
 
-const Work: React.FC = () => {
-    const skills = [
+// Work Skills constants
+const mailchimpSkills = [
         "JavaScript",
-        "TypeScript",
         "React",
-        "Next.js",
-        "Node.js",
-        "CSS",
         "HTML",
+        "CSS",
         "REST APIs",
         "Git",
         "Figma",
-        "Adobe Creative Suite"
+        "Jest",
+        "Playwright",
     ];
+
+    const synopSkills = [
+        "React",
+        "TypeScript",
+        "Vizx",
+        "Nx",
+        "Jest",
+        "RTK Query",
+        "Storybook",
+        "Figma",
+        "Bitbucket",
+    ];
+
+    const jpmSkills = [
+        "Java",
+        "Typescript",
+        "React",
+        "HTML",
+        "CSS",
+        "REST APIs",
+        "Git",
+    ]
+
+const Work: React.FC = () => {
     return (
         <section className="p-8">
-            <h2>Skills</h2>
-            <div className="flex flex-wrap">
-                {skills.map((skill) => (
-                    <span key={skill} className="badge"> {skill} </span>
-                ))}
-            </div>
-            
             <h2>Experience</h2>
             <div className="gap-3">
                 <CompanyTitle title="Software Engineer II" company="Intuit" />
@@ -32,6 +48,7 @@ const Work: React.FC = () => {
                     - Led design system overhaul serving 13+ million users, improving performance and user experience across the platform <br />
                     - Drove multiple technical initiatives such as reducing technical debt, improving testing coverage and strategy, and implementing A/B testing frameworks <br />
                 </div>
+                <CompanySkills skills={mailchimpSkills} />
                 <CompanyTitle title="Founding Senior Frontend Engineer" company="Synop" />  
                 <span className='italic'>March 2022- December 2022</span>
                 <div>
@@ -39,21 +56,33 @@ const Work: React.FC = () => {
                     - Collaborated with product and design leadership to define technical frontend architecture and user experience strategy <br />
                     - Owned and developed User & Vehicle Management frontend domain and product features <br />
                 </div>
+                <CompanySkills skills={synopSkills} />
                 <CompanyTitle title="Associate Software Engineer" company="JPMorgan Chase & Co." />
                 <span className='italic'>July 2018 - February 2022</span>
-                <div className='grid'>
+                <div>
                     - Developed internal platform used by 130+ employees including C-suite executives <br />
                     - Led demos and training sessions to drive platform adoption across teams <br />
                     - Enhanced multiple applications focusing on user experience and code quality <br />
                 </div>
+                <CompanySkills skills={jpmSkills} />
             </div>
+            <button type="button" className="px-4 py-2 rounded font-bold bg-gray-200">
+                <div className="flex flex-nowrap"><Download/>Download Resume</div></button>
         </section>
     );
 };
 
 const CompanyTitle: React.FC<{ title: string; company: string; }> = ({ title, company }) => (
     <div className="text-md md:text-xl">
-        <span className="font-bold">{title}</span> @ <span className="badge">{company}</span>
+        <span className="font-bold">{title}</span> @ {company}
+    </div>
+);
+
+const CompanySkills: React.FC<{ skills: string[] }> = ({ skills }) => (
+    <div className="flex flex-wrap mb-2">
+        {skills.map((skill) => (
+            <span key={skill} className="text-sm badge"> {skill} </span>
+        ))}
     </div>
 );
 

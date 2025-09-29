@@ -1,4 +1,4 @@
-import { Github, Linkedin, MailOut } from "iconoir-react";
+import { BookStack, Github, Linkedin, MailOut } from "iconoir-react";
 
 function About() {
     return (
@@ -19,14 +19,14 @@ function About() {
             and like to <a className="inline-link">make things</a> with my hands.
           </p>
           <div className="flex justify-center md:justify-start gap-1 md:gap-4 text-2xl py-4 w-full">
-            <a href="mailto:jacolivilla@gmail.com">
-                <MailOut />
-            </a>
             <a href="https://www.linkedin.com/in/jlinang/">
                 <Linkedin />
             </a>
             <a href="https://github.com/jacolin-web">
                 <Github />
+            </a>
+            <a href="https://jacolinvilla.substack.com/">
+                <BookStack />
             </a>
           </div>
         </div>

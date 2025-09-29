@@ -78,7 +78,8 @@ const DynamicRoleText: React.FC = () => {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [changeText, currentIndex, isChanging]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentIndex, isChanging]);
   
   const textClasses = `
     text-center text-lg transition-all duration-300

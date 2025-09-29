@@ -88,15 +88,22 @@ h3{
   border: 1px solid var(--color-gray-950);
   border-radius: 25px;
   margin: 2px 4px 4px 2px;
-  padding: 4px;
+  padding: 2px 4px 2px 4px;
   font-weight: 600;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   h2{
-  letter-spacing: 0.2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: normal;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  h3 {
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
   }
 }
