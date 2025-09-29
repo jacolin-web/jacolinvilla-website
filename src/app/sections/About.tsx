@@ -19,13 +19,21 @@ function About() {
             and like to <a className="inline-link">make things</a> with my hands.
           </p>
           <div className="flex justify-center md:justify-start gap-1 md:gap-4 text-2xl py-4 w-full">
-            <a href="https://www.linkedin.com/in/jlinang/">
-                <Linkedin />
+            <a 
+              href="https://www.linkedin.com/in/jlinang/"
+              aria-label="LinkedIn"
+            >
+                <Linkedin/>
             </a>
-            <a href="https://github.com/jacolin-web">
+            <a 
+              href="https://github.com/jacolin-web"
+              aria-label="GitHub"
+            >
                 <Github />
             </a>
-            <a href="https://jacolinvilla.substack.com/">
+            <a 
+              href="https://jacolinvilla.substack.com/"
+              aria-label="Substack">
                 <BookStack />
             </a>
           </div>

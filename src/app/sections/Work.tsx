@@ -52,7 +52,7 @@ const Work: React.FC = () => {
                 <CompanyTitle title="Founding Senior Frontend Engineer" company="Synop" />  
                 <span className='italic'>March 2022- December 2022</span>
                 <div>
-                    - Built design system and component library from scratch.. <br />
+                    - Built design system and component library from scratch. <br />
                     - Collaborated with product and design leadership to define technical frontend architecture and user experience strategy. <br />
                     - Owned and developed User & Vehicle Management frontend domain and product features. <br />
                 </div>
@@ -68,7 +68,6 @@ const Work: React.FC = () => {
             </div>
             <a 
                 href="/assets/jacolinvilla-resume.pdf" 
-                download
                 className="download-link font-bold inline-flex items-center px-4 py-2 bg-gray-200"
                 >
                 <Download />
