@@ -27,10 +27,10 @@ export default function Home({ searchParams }: PageProps) {
 
    return (
     <div className="font-sans min-h-screen md:h-screen flex flex-col">
-      <main className="flex-1 flex flex-col md:overflow-hidden md:min-h-0 bg-amber-50 ">
+      <main className="flex-1 flex flex-col md:overflow-hidden md:min-h-0">
         <div className="flex flex-col md:flex-row w-full md:h-full">
           {/* Left section */}
-          <div className="bg-violet-200 p-10 flex flex-col justify-center md:min-w-[300px]">
+          <div className="bg-[var(--midground)] p-10 flex flex-col justify-center md:min-w-[300px]">
             <Image
               className="bio-avatar grayscale hidden md:block"
               src="/assets/image.jpeg"
@@ -70,7 +70,7 @@ export default function Home({ searchParams }: PageProps) {
         </div>
       </main>
       
-      <footer className="flex-shrink-0 flex gap-[24px] flex-wrap items-center justify-center p-4 bg-gray-50 border-t">
+      <footer className="flex-shrink-0 flex gap-[24px] flex-wrap items-center justify-center p-4 text-[var(--foreground)] bg-[var(--footer)] border-t">
         This site built with NextJS & Tailwind. Icons from Iconoir. Made with an iced ube latte. 2025.
       </footer>
     </div>

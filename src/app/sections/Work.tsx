@@ -69,7 +69,7 @@ const Work: React.FC = () => {
             <a 
                 href="/assets/jacolinvilla-resume.pdf" 
                 aria-label='Download Resume'
-                className="download-link font-bold inline-flex items-center px-4 py-2 bg-gray-200"
+                className="download-link font-bold inline-flex items-center px-4 py-2 bg-[var(--footer)] hover:text-fuschia-400"
                 >
                 <Download />
                 Download Resume
