@@ -27,7 +27,7 @@ export default function Home({ searchParams }: PageProps) {
 
    return (
     <div className="font-sans min-h-screen md:h-screen flex flex-col">
-      <main className="flex-1 flex flex-col md:overflow-hidden md:min-h-0">
+      <main className="flex-1 flex flex-col md:overflow-hidden md:min-h-0 bg-amber-50 ">
         <div className="flex flex-col md:flex-row w-full md:h-full">
           {/* Left section */}
           <div className="bg-violet-200 p-10 flex flex-col justify-center md:min-w-[300px]">
@@ -53,7 +53,7 @@ export default function Home({ searchParams }: PageProps) {
           </div>
           
           {/* Right section */}
-          <div className="bg-amber-50 flex-1 md:border-l flex flex-col md:min-h-0">
+          <div className="flex-1 md:border-l flex flex-col md:min-h-0">
             <div className="flex-shrink-0">
               <SectionNav currentSection={currentSection} />
             </div>

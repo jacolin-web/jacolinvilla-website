@@ -5,7 +5,6 @@ const DynamicRoleText: React.FC = () => {
   const jobTitles: string[] = [
     "front-end engineer",
     "design technologist", 
-    "creative developer",
     "design systems engineer"
   ];
   
